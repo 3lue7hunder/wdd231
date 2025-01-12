@@ -1,0 +1,115 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #3c497b;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+header .profile {
+    height: 100px;
+    width: auto;
+    border-radius: 50%;
+}
+
+header span {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    flex-direction: column; /* Vertical links in mobile view */
+    background-color: #222;
+    padding: 10px 0;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Full width in mobile view */
+}
+
+nav ul li {
+    margin: 5px 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    text-align: center;
+    border-radius: 4px;
+    background-color: #3c497b;
+    transition: background-color 0.3s;
+}
+
+nav ul li a.active {
+    background-color: #576ca8;
+}
+
+nav ul li a:hover {
+    background-color: #576ca8;
+}
+
+/* Main Content */
+main {
+    max-width: 960px; /* Limit the width */
+    margin: 20px auto; /* Center horizontally */
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr; /* Single column for mobile */
+    gap: 20px;
+}
+
+.intro {
+    grid-column: 1 / -1; /* Span the entire grid width */
+    text-align: center; /* Center align the heading text */
+    margin-bottom: 20px; /* Add spacing below the heading */
+}
+
+.intro h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #034078;
+}
+
+/* Cards */
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background-color: #3c497b;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+/* Lists */
+ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0;
+}
+
+
