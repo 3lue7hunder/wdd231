@@ -1,4 +1,4 @@
-/* Global Styles */
+/* ========== General Styles ========== */
 body {
     font-family: "Roboto Condensed", serif;
     background-color: #f9f9f9;
@@ -7,9 +7,14 @@ body {
     padding: 0;
 }
 
-/* Header */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* ========== Header ========== */
 header {
-    background-color: #3c497b;
+    background-color: #172a74;
     color: #fff;
     text-align: center;
     padding: 20px;
@@ -23,25 +28,30 @@ header .profile {
 
 header span {
     display: block;
-    font-size: 24px;
+    font-size: 30px;
     font-weight: bold;
     margin-top: 10px;
 }
 
-/* Navigation */
+/* ========== Navigation ========== */
 nav {
     display: flex;
-    flex-direction: column; /* Vertical links in mobile view */
-    background-color: #222;
-    padding: 10px 0;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 nav ul {
-    list-style-type: none; /* Remove bullets */
-    padding: 0;
-    margin: 0;
-    width: 100%; /* Full width in mobile view */
+    display: none; /* Hide menu initially for small screens */
+    flex-direction: column;
+    width: 100%;
+    background-color: #3c497b;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
 }
 
 nav ul li {
@@ -59,57 +69,172 @@ nav ul li a {
     transition: background-color 0.3s;
 }
 
-nav ul li a.active {
-    background-color: #576ca8;
-}
-
+nav ul li a.active,
 nav ul li a:hover {
     background-color: #576ca8;
 }
 
-/* Main Content */
-main {
-    max-width: 960px; /* Limit the width */
-    margin: 20px auto; /* Center horizontally */
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr; /* Single column for mobile */
-    gap: 20px;
+/* ========== Hamburger Menu ========== */
+.menu-button {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    top: 15px;
+    right: 20px;
 }
 
+nav.open ul {
+    display: flex; /* Show menu when open */
+}
+
+/* ========== Main Content ========== */
+main {
+    max-width: 960px; 
+    margin: 20px auto; 
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates two equal-width columns for the first two sections */
+    gap: 20px; /* Adds spacing between the sections */
+}
+
+section {
+    align-items: center;
+    margin: 20px;
+}
+
+/* Intro Section */
 .intro {
-    grid-column: 1 / -1; /* Span the entire grid width */
-    text-align: center; /* Center align the heading text */
-    margin-bottom: 20px; /* Add spacing below the heading */
+    grid-column: 1 / -1; 
+    text-align: center; 
+    margin-bottom: 10px; 
 }
 
 .intro h1 {
-    font-size: 24px;
+    font-size: 40px;
     font-weight: bold;
     color: #034078;
 }
 
 /* Cards */
-.card {
+.card1, .card2, .card3 {
+    background-color: #fff;
+    padding: 0px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    display: flex; /* Enables flexbox */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Ensures text elements are centered */
+    position: relative; /* Ensure sections can have their own layout */
+    padding-top: 70px;
+}
+
+.card1 h2, .card2 h2, .card3 h2 {
+    background-color: #172a74;
+    color: white; 
+    text-align: center; 
+    margin: 0px;  /* Remove default margin */
+    padding: 15px;
+    width: 100%; /* Ensure it stretches fully */
+    display: block; /* Ensure it behaves as a block element */
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+    position: absolute; /* Position it relative to the section */
+    top: 0px;  /* Position it 30px from the top of the section */
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+
+.card3 {
+    grid-column: span 2; /* Makes card3 span across both columns */
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Footer */
+
+/* ========== Courses ========== */
+.courses {
+    display: flex;
+    flex-wrap: wrap;  /* Allows items to wrap to a new row */
+    gap: 10px; /* Adds spacing between items */
+    justify-content: center; /* Centers the items */
+}
+
+.course {
+    flex: 1 1 calc(33.33% - 10px); /* Ensures three columns */
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    min-width: 150px; /* Prevents collapsing */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+}
+
+.course.CSE {
+    background-color: #e3f2fd;
+    color: #0d47a1;
+    cursor: pointer; /* Show a pointer on hover */
+}
+
+.course.WDD {
+    background-color: #e8f5e9;
+    color: #1b5e20;
+    cursor: pointer; /* Show a pointer on hover */
+}
+
+.course.completed {
+    text-decoration: line-through;
+    color: gray; /* Optional: Makes it visually distinct */
+    cursor: pointer; /* Show a pointer on hover */
+}
+
+.buttons{
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.buttons button {
+    padding: 10px 20px; /* Increase padding for larger buttons */
+    font-size: 15px; /* Increase font size */
+    border-radius: 8px; /* Optional: Make the buttons rounded */
+    cursor: pointer; /* Show a pointer on hover */
+    background-color: #172a74;/* Button background color */
+    color: white; /* Text color */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+    margin: 10px; /* Add space between buttons */
+}
+
+.buttons button:hover {
+    background-color: #576ca8; /* Hover effect */
+}
+
+
+/* ========== Images ========== */
+.mountain {
+    width: 250px;
+    padding: 10px;
+}
+
+/* ========== Footer ========== */
 footer {
-    background-color: #3c497b;
+    background-color: #172a74;
     color: white;
     text-align: center;
     padding: 10px 0;
     font-size: 14px;
 }
 
-/* Lists */
-ul {
-    list-style-type: none; /* Remove bullets */
-    padding: 0;
+/* ========== Responsive Design ========== */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
 }
-
-

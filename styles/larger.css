@@ -1,37 +1,20 @@
-@media screen and (min-width: 768px) {
-    /* Navigation */
+@media (min-width: 768px) {
     nav {
-        flex-direction: row; /* Horizontal links in larger view */
+        flex-direction: row; /* Ensure horizontal layout */
         justify-content: center;
     }
 
     nav ul {
-        display: flex;
+        display: flex !important; /* Force show menu */
         flex-direction: row;
         justify-content: center;
         gap: 20px;
+        position: static; /* Remove absolute positioning */
+        background: none; /* Remove background */
+        padding: 0;
     }
 
-    nav ul li {
-        margin: 0;
-    }
-
-    nav ul li a {
-        display: inline-block;
-        padding: 10px 15px;
-    }
-
-    /* Main Content */
-    main {
-        grid-template-columns: 2fr 1fr; /* Two-column layout for cards */
-        gap: 20px;
-    }
-
-    .intro h1 {
-        font-size: 28px; /* Adjust heading size for larger screens */
-    }
-
-    footer {
-        font-size: 16px; /* Slightly larger footer text */
+    #menu-toggle {
+        display: none; /* Hide menu button on large screens */
     }
 }
