@@ -29,7 +29,6 @@
             </ul>
         </nav>
     </header>
-    
     <main>
         <div class="intro">
             <h1>Home</h1>
@@ -56,13 +55,14 @@
                 <button onclick="filterCourses('completed')">Completed</button>
             </div>
             <div class="courses">
-                <div class="course CSE">CSE 110</div>
-                <div class="course WDD">WDD 130</div>
-                <div class="course CSE">CSE 111</div>
-                <div class="course CSE">CSE 210</div>
-                <div class="course WDD">WDD 131</div>
-                <div class="course WDD">WDD 231</div>
+                <div class="course CSE" data-credits="2">CSE 110</div>
+                <div class="course WDD" data-credits="3">WDD 130</div>
+                <div class="course CSE" data-credits="2">CSE 111</div>
+                <div class="course CSE" data-credits="3">CSE 210</div>
+                <div class="course WDD" data-credits="4">WDD 131</div>
+                <div class="course WDD" data-credits="4">WDD 231</div>
             </div>
+            <div id="total-credits">Total Credits: 0</div>
         </section>
     </main>
     <footer>

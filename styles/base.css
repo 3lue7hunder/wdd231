@@ -122,7 +122,7 @@ section {
 /* Cards */
 .card1, .card2, .card3 {
     background-color: #fff;
-    padding: 0px;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     display: flex; /* Enables flexbox */
@@ -236,5 +236,18 @@ footer {
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
+    }
+
+    main {
+        display: flex; /* Switch to flexbox for easier centering */
+        flex-direction: column; /* Stack sections vertically */
+        align-items: center; /* Center the sections horizontally */
+        gap: 20px; /* Space between the sections */
+    }
+    
+    .card1, .card2, .card3 {
+        width: 90%; /* Make sure the sections take up most of the screen width */
+        max-width: 600px; /* Optional: Limit maximum width for better readability */
+        box-sizing: border-box; /* Ensure padding and margins are included in the width */
     }
 }

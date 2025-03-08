@@ -9,17 +9,33 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-// Function to filter courses based on category or completion
+// Function to filter courses based on category or completion and update total credits
 function filterCourses(category) {
     let courses = document.querySelectorAll(".course");
+    let totalCredits = 0;
 
     courses.forEach(course => {
+        // Show/hide courses based on the selected category
         if (category === "all") {
             course.style.display = "block";
+            totalCredits += parseInt(course.getAttribute("data-credits"));
         } else if (category === "completed") {
-            course.style.display = course.classList.contains("completed") ? "block" : "none";
+            if (course.classList.contains("completed")) {
+                course.style.display = "block";
+                totalCredits += parseInt(course.getAttribute("data-credits"));
+            } else {
+                course.style.display = "none";
+            }
         } else {
-            course.style.display = course.classList.contains(category) ? "block" : "none";
+            if (course.classList.contains(category)) {
+                course.style.display = "block";
+                totalCredits += parseInt(course.getAttribute("data-credits"));
+            } else {
+                course.style.display = "none";
+            }
         }
     });
+
+    // Display the total credits
+    document.getElementById("total-credits").textContent = `Total Credits: ${totalCredits}`;
 }
