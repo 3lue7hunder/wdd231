@@ -4,7 +4,7 @@ document. addEventListener ('DOMContentLoaded', () => {
 
     const cards = document.querySelector('#members');
     
-    const path = '../data/members.json';
+    const path = './data/members.json';
     
     //function to fetch data
     async function getMembers() {
