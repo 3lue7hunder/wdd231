@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 231 - Web Frontend Development | Ty Rusnell | course assignment portal">
+    <meta name="author" content="Ty Rusnell">
+    <title>Ty Rusnell - WDD 231 - Web Frontend Development 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;500&display=swap" rel="stylesheet">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+    <script defer src="scripts/getdates.js"></script>
+    <script defer src="scripts/navigation.js"></script>
+    <script defer src="scripts/members.js"></script>
+    <script defer src="scripts/cls.js"></script>
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <img src="Images/Utah.png" alt="Utah" width="90" >
+        <div>
+        <span>Utah</span>
+        <div>Chamber of Commerce</div>
+    </div>
+        <button id="hamburger" aria-label="hamburger"></button>
+    </header>
+    <nav id="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Directory</h1>
+        <div class="theButtons">
+            <button id="btnGrid" class="active">Grid</button>
+            <button id="btnList" class="">List</button>
+        </div>
+        <div id="members" class="grid"></div>
+    </main>
+    <footer>
+        <section class="address">
+            <p>Utah Chamber of Commerce</p>
+            <p>123 Utah Road</p>
+            <p>Salt Lake City, UT 12345</p>
+            <p>info@utah.org</p>
+            <p>(801) 123-4567</p>
+        </section>
+        <section class="social">
+            <a href="https://www.facebook.com/"><img src="Images/facebook.png" alt="facebook" width="25" height="44"></a>
+            <a href="https://x.com/"><img src="Images/twitter.png" alt="twitter" width="54" height="44"></a>
+            <a href="https://www.instagram.com/"><img src="Images/instagram.png" alt="instagram" width="44" height="44"></a>
+        </section>
+        <section class="project">
+            <p>&copy; <span id="currentyear"></span> Ty Rusnell | Utah</p>
+        <p id="lastModified"></p>
+        </section>
+    </footer>
+</body>
+</html>
+
+
+
