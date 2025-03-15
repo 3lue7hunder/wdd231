@@ -100,4 +100,3 @@ async function apiFetch() {
     temp3.innerHTML = `${dayNames[d.getDay()+2]}: ${data.list[16].main.temp}&deg;F`
     forecast.appendChild(temp3)
   }
-
