@@ -2,7 +2,7 @@
     "members": [
         {
             "name": "Summit Tech Solutions",
-            "address": "456 Innovation Drive, Salt Lake City, UT 84101",
+            "address": "456 Innovation Drive, Salt Lake City, UT",
             "phone": "(801) 555-2398",
             "url": "#",
             "logopath": "tech.jpg",
@@ -10,7 +10,7 @@
         },
         {
             "name": "Wasatch Outdoor Gear",
-            "address": "789 Adventure Way, Park City, UT 84060",
+            "address": "789 Adventure Way, Park City, UT",
             "phone": "(435) 555-6712",
             "url": "#",
             "logopath": "outdoor.jpg",
@@ -18,7 +18,7 @@
         },
         {
             "name": "Beehive Solar Energy ",
-            "address": " 1200 Solar Vista Blvd, Provo, UT 84604",
+            "address": " 1200 Solar Vista Blvd, Provo, UT",
             "phone": "(801) 555-8842",
             "url": "#",
             "logopath": "solar.jpg",
@@ -26,7 +26,7 @@
         },
         {
             "name": "Rocky Mountain Craft Brews",
-            "address": "350 Brewery Lane, Ogden, UT 84401",
+            "address": "350 Brewery Lane, Ogden, UT",
             "phone": "(801) 555-4759",
             "url": "#",
             "logopath": "brews.jpg",
@@ -34,7 +34,7 @@
         },
         {
             "name": "Utah Pioneers Construction",
-            "address": "612 Builder’s Court, St. George, UT 84770",
+            "address": "612 Builder’s Court, St. George, UT",
             "phone": "(435) 555-2034",
             "url": "#",
             "logopath": "construnction.jpg",
@@ -42,7 +42,7 @@
         },
         {
             "name": "Zion Wellness & Spa",
-            "address": "925 Serenity Lane, Moab, UT 84532",
+            "address": "925 Serenity Lane, Moab, UT",
             "phone": "(435) 555-9987",
             "url": "#",
             "logopath": "spa.jpg",
@@ -50,7 +50,7 @@
         },
         {
             "name": "Aspen Peak Financial",
-            "address": "1100 Prosperity Road, Lehi, UT 84043",
+            "address": "1100 Prosperity Road, Lehi, UT",
             "phone": "(801) 555-7415",
             "url": "#",
             "logopath": "finance.jpg",

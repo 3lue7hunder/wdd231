@@ -7,7 +7,7 @@
 }
 
 * {
-   /* font-family: "Cormorant Upright", serif; */
+    font-family: "Rowdies", sans-serif;
 }
 
 /*************** Header ***************/
@@ -89,6 +89,7 @@ nav ul {overflow: hidden;}
 
 main h1, main h2, main h3, main p, main a {
     margin: .5rem 10px;
+    padding: 0px 10px;
     color: var(--dark-charcoal);
     font-size: rem;
 }
@@ -117,6 +118,7 @@ div.grid {
 div.grid section {
   text-align: center;
   margin: 1rem 0;
+
   border: solid 1px #aaa;
   background-color: #eee;
   border-radius: 10px;
