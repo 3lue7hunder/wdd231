@@ -91,7 +91,6 @@ main h1, main h2, main h3, main p, main a {
     margin: .5rem 10px;
     padding: 0px 10px;
     color: var(--dark-charcoal);
-    font-size: rem;
 }
 
 /*************** Directory ***************/
