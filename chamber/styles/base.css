@@ -17,6 +17,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: left;
+    color: var(--dark-charcoal);
 }
 header img {display: block; padding: 16px 10px;
 }
@@ -145,6 +146,7 @@ div.list img:first-child {display: none;}
 
 footer {
     background-color: var(--columbia-blue);
+    color: var(--dark-charcoal);
 }
 footer section {
     padding: 2rem 10px;
