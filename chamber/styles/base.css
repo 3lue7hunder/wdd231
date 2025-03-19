@@ -42,7 +42,7 @@ nav ul li a {
     padding: .75rem;
     display: block;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
 nav ul li.active a {background-color: var(--chestnut); color: white;}
@@ -74,6 +74,7 @@ button#hamburger::before {
 button#hamburger.show::before {
 	content: "x";
 }
+
 /************ Hamburger open and close *************/
 
 nav {
@@ -94,6 +95,86 @@ main h1, main h2, main h3, main p, main a {
     color: var(--dark-charcoal);
 }
 
+/************************** Hero Image **************************/
+
+.hero {
+    max-width: 100%;
+    position: relative;
+}
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.hero a{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    display: block;
+    width: 100px;
+    text-align: center;
+    color: var(--dark-charcoal);
+    border: solid 1px #000;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: var(--columbia-blue);
+}
+
+/*************** Events and Weather ***************/
+
+section.ew {margin: .5rem 10px;}
+section.ew div {background-color: #eee;}
+section.ew h2 {
+    margin: 0;
+    background-color: var(--maximum-yellow-red);
+    color: var(--dark-charcoal);
+    padding: 5px 10px;
+    text-align: center;
+}
+div.events p{
+    margin: .75rem 10px
+}
+div.weather div{
+    display: flex;
+}
+div.weather p {
+    font-family: Verdana, sans-serif;
+    margin: .2rem 0;
+    font-size: .75rem;
+    color: var(--dark-charcoal);
+
+}
+#forecast p {
+    margin: .5rem 10px;
+    font-family: Verdana, sans-serif;
+    color: var(--dark-charcoal);
+}
+
+/*************** Home Spotlight ***************/
+
+#spot div {
+    background-color: #eee;
+    text-align: center;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px;
+}
+#spot h2 {
+    background-color: var(--maximum-yellow-red);
+    margin: 0;
+    padding: .3rem 0;
+    font-size: 1.1rem;
+}
+#spot p {
+    margin: 0;
+    padding: .5rem;
+}
+#spot img {
+    width: 100px;
+    height: auto;
+}
+
 /*************** Directory ***************/
 
 div.theButtons {width: 100%; text-align: center;}
@@ -111,7 +192,7 @@ div#members {
 div.grid {
   display: flex;
   flex-wrap: wrap;
-  gap:8px;
+  gap:20px;
   justify-content: center;
   
 }

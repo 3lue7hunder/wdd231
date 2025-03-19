@@ -1,4 +1,3 @@
-
 @media only screen and (min-width: 64rem) {
     button#hamburger {
         display: none;
@@ -20,33 +19,28 @@
     }
     nav ul li:last-child a {border:none;}
 
-    /************ Events and Weather *************/
+    /*************** Events and Weather ***************/
     section.ew {
         display: grid;
         grid-template-columns: 2fr 1fr 1fr;
         column-gap: 10px;
     }
 
-    /************ JOIN page *************/
+    /*************** JOIN page ***************/
     .sbs {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
-    /************************** HOME PAGE SPOTLIGHTS HERE **************************/
+    /*************** HOME PAGE SPOTLIGHTS HERE ***************/
     #spot {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 10px;
     }
 
-
-
-    header,
-    main,
-    nav,
-    footer {
-        max-width: 1200px;
+    header, main, nav, footer {
+        max-width: 100%;
         margin: 0 auto;
     }
 
@@ -55,7 +49,8 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    /************************** DISCOVER PAGE HERE **************************/
+    /*************** DISCOVER PAGE HERE ***************/
+
     #allplaces {
         display: grid;
         grid-template-columns: 1fr 1fr;
