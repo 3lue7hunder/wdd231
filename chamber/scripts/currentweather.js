@@ -44,11 +44,11 @@ async function apiFetch() {
   
 }
 
-  function displayResults(data) {
-    const iconsrc = `https://openweathermap.org/img/w/${data.list[0].weather[0].icon}.png`;
-    let desc = data.list[0].weather[0].main;
-    weatherIcon.setAttribute('src', iconsrc);
-    weatherIcon.setAttribute('alt', desc);
+function displayResults(data) {
+  const iconsrc = `https://openweathermap.org/img/wn/${data.list[0].weather[0].icon}@2x.png`;
+  let desc = data.list[0].weather[0].main;
+  weatherIcon.setAttribute('src', iconsrc);
+  weatherIcon.setAttribute('alt', desc);
 
     const city=document.createElement('p')
     city.innerHTML = `City: ${data.city.name}`

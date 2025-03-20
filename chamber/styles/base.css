@@ -87,7 +87,7 @@ nav.show {
 }
 nav ul {overflow: hidden;}
 
-/***************Page Styling ***************/
+/*************** Page Styling ***************/
 
 main h1, main h2, main h3, main p, main a {
     margin: .5rem 10px;
@@ -95,7 +95,7 @@ main h1, main h2, main h3, main p, main a {
     color: var(--dark-charcoal);
 }
 
-/************************** Hero Image **************************/
+/*************** Hero Image ***************/
 
 .hero {
     max-width: 100%;
@@ -131,10 +131,11 @@ section.ew h2 {
     padding: 5px 10px;
     text-align: center;
 }
-div.events p{
-    margin: .75rem 10px
+div.events p {
+    margin: .75rem 10px;
+    padding-left: 80px;
 }
-div.weather div{
+div.weather div {
     display: flex;
 }
 div.weather p {
@@ -142,12 +143,26 @@ div.weather p {
     margin: .2rem 0;
     font-size: .75rem;
     color: var(--dark-charcoal);
-
 }
+
+.weather {
+    min-height: 100px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather h2 {
+    align-self: stretch; /* Keeps h2 full width */
+    text-align: center; /* Ensures text is centered */
+}
+
 #forecast p {
     margin: .5rem 10px;
     font-family: Verdana, sans-serif;
     color: var(--dark-charcoal);
+    text-align: center;
 }
 
 /*************** Home Spotlight ***************/
@@ -175,6 +190,10 @@ div.weather p {
     height: auto;
 }
 
+#spot {
+    min-height: 150px; /* Adjust based on expected content size */
+}
+
 /*************** Directory ***************/
 
 div.theButtons {width: 100%; text-align: center;}
@@ -194,12 +213,10 @@ div.grid {
   flex-wrap: wrap;
   gap:20px;
   justify-content: center;
-  
 }
 div.grid section {
   text-align: center;
   margin: 1rem 0;
-
   border: solid 1px #aaa;
   background-color: #eee;
   border-radius: 10px;
@@ -228,6 +245,7 @@ div.list img:first-child {display: none;}
 footer {
     background-color: var(--columbia-blue);
     color: var(--dark-charcoal);
+    min-height: 200px;
 }
 footer section {
     padding: 2rem 10px;
