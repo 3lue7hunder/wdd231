@@ -51,8 +51,8 @@
                 <form method="GET" action="thankyou.html" class="designOne">
                     <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
                     <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
-                    <label>Title <input type="text" name="title" autocomplete="organization-title" title="Your Title" pattern="[a-zA-Z0-9 -]{7,}"></label>
-                    <label>Email <input type="email" name="email" title="Your Email" required autocomplete="email"></label>
+                    <label>Title <input type="text" name="title" autocomplete="organization-title" title="Your Title" pattern="[a-zA-Z -]{7,}" required></label>
+                    <label>Email <input type="email" name="email" title="Your Email" required autocomplete="email" placeholder="example@email.com"></label>
                     <label>Cell Phone <input type="tel" name="phone" required autocomplete="tel" title="A Phone Number with dashes" ></label>
                     <label>Organization <input type="text" name="organization" required  title="organization" autocomplete="organization"></label>
                     <label>Business Decription<textarea name="description"></textarea></label>
