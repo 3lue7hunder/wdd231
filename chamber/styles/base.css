@@ -65,7 +65,6 @@ button#hamburger {
 	text-align: center;
 	width: 50px;
 	cursor: pointer;
-    font-family: 'Trebuchet MS', sans-serif;
 }
 
 button#hamburger::before {
@@ -115,7 +114,7 @@ main h1, main h2, main h3, main p, main a {
     text-align: center;
     color: var(--dark-charcoal);
     border: solid 1px #000;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 10px;
     background-color: var(--columbia-blue);
 }
@@ -134,14 +133,14 @@ section.ew h2 {
 div.events p {
     margin: .75rem 10px;
     padding-left: 80px;
+    color: var(--dark-charcoal);
 }
 div.weather div {
     display: flex;
 }
 div.weather p {
-    font-family: Verdana, sans-serif;
-    margin: .2rem 0;
-    font-size: .75rem;
+    margin: .5rem 0;
+    font-size: .8rem;
     color: var(--dark-charcoal);
 }
 
@@ -154,13 +153,12 @@ div.weather p {
 }
 
 .weather h2 {
-    align-self: stretch; /* Keeps h2 full width */
-    text-align: center; /* Ensures text is centered */
+    align-self: stretch; 
+    text-align: center; 
 }
 
 #forecast p {
     margin: .5rem 10px;
-    font-family: Verdana, sans-serif;
     color: var(--dark-charcoal);
     text-align: center;
 }
@@ -191,7 +189,7 @@ div.weather p {
 }
 
 #spot {
-    min-height: 150px; /* Adjust based on expected content size */
+    min-height: 150px; 
 }
 
 /*************** Directory ***************/
@@ -240,6 +238,154 @@ div.list section {
 }
 div.list img:first-child {display: none;}
 
+/*************** Join ***************/
+
+.sbs {padding: 3rem;}
+form.designOne {
+    margin: 1rem 2%;
+}
+.designOne label {
+    display: block;
+    font-size: 1.2rem;
+    color: var(--dark-charcoal);
+    padding-top: .2rem;
+}
+.designOne h3 {
+    font-size: 1.5rem;
+    color: var(--dark-charcoal);
+    margin: 1.5rem 0 .5rem 0;
+    border-bottom: 1px solid #342836;
+}
+
+.designOne input[type=text],
+.designOne input[type=tel],
+.designOne input[type=date],
+.designOne input[type=email],
+.designOne textarea,
+.designOne select {
+    display: block;
+    margin: .1rem 0 1rem 0 ;
+    padding: .3rem;
+    border: 1px solid #999;
+    border-radius: 5px;
+    border-left-width: 6px;
+    border-left-color: var(--maximum-yellow-red);
+    font-size: 1rem;
+    color: var(--dark-charcoal);
+    width: 250px;
+}
+
+.designOne input:required {border-left-color: var(--maximum-yellow-red);}
+.designOne input:focus {border-left-color: var(--chestnut); outline:none;}
+.designOne textarea:focus {border-left-color: var(--chestnut); outline:none;}
+.designOne select:focus {border-left-color: var(--chestnut); outline:none;}
+
+.designOne input[type=submit] {
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #9a4822;
+    color: white;
+    padding: .75rem 1.5rem;
+    margin: 2rem 0;
+    font-size: 1.2rem;
+
+    
+    animation-name: grow;
+    animation-delay: 2.5s;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes grow {
+    0% {}
+    50% { scale: 1.5; background-color: var(--maximum-yellow-red);}
+    100% {}
+}
+
+#results {
+    background-color: #F4F1DE;
+    padding: 0 1rem;
+    margin: 10px;
+    border: 1px solid #9a4822;
+    border-radius: 6px;
+    }
+   
+
+/*************** Modal ***************/
+
+.mslvl aside {
+    border: solid 1px #444;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: var(--columbia-blue);
+    text-align: center;
+    margin-bottom: 1rem;
+
+    animation-duration: 2s;
+    animation-name: slidein;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes slidein {
+    0% {
+      margin-top: 0px;
+      background-color: var(--columbia-blue);
+    }
+    50% {
+      margin-top: 50px;
+      background-color: var(--weldon-blue);
+    }
+    100% {
+        margin-top: 0px;
+        background-color:  var(--columbia-blue);
+      }
+  }
+
+#mlModal {
+    position: relative;
+    border: 2px solid #f2ad46;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: #eee;
+    box-shadow: 0 0 20px #777;
+    width: 80%;
+}
+
+#mlModal div {
+    display: grid;
+    grid-template-columns: auto 50px;
+    border-bottom: dashed 1px #aaa;
+  }
+  
+  #mlModal h4 {
+    font-size: 1.5rem;;
+    font-weight: 500;
+    margin: 0;
+    color: var(--dark-charcoal);
+  }
+
+  #mlModal span {
+    font-size: 1rem;
+  }
+
+  ::backdrop {
+    background-color: rgba(255, 255, 255, 0.75);
+  }
+  
+  #mlModal button {
+    width: 44px;
+    height: 44px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #ccc;
+    font-size: 1.5rem;
+  }
+
+  #mldetails {
+    color: var(--dark-charcoal);
+  }
+
 /*************** Footer ***************/
 
 footer {
@@ -263,3 +409,4 @@ footer img {
 footer p {
     margin: .25rem;
 }
+

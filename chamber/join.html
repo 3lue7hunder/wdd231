@@ -44,32 +44,57 @@
         </ul>
     </nav>
     <main>
-        <div class="hero">
-            <img src="images/hero.webp" alt="Utah" width="600" height="400">
-
-            <a href="join.html">Join Us</a>
+        <h1>Join</h1>
+        <div class="sbs">
+            <section>
+                <h2>Membership Application Form</h2>
+                <form method="GET" action="thankyou.html" class="designOne">
+                    <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
+                    <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+                    <label>Title <input type="text" name="title" autocomplete="organization-title" title="Your Title" pattern="[a-zA-Z0-9 -]{7,}"></label>
+                    <label>Email <input type="email" name="email" title="Your Email" required autocomplete="email"></label>
+                    <label>Cell Phone <input type="tel" name="phone" required autocomplete="tel" title="A Phone Number with dashes" ></label>
+                    <label>Organization <input type="text" name="organization" required  title="organization" autocomplete="organization"></label>
+                    <label>Business Decription<textarea name="description"></textarea></label>
+                    <label for="membership">Select Membership Level</label>
+                    <select name="membership" id="membership" required>
+                        <option value="" selected disabled>Select Level</option>
+                        <option value="NP Membership">NP Membership</option>
+                        <option value="Bronze Membership">Bronze Membership</option>
+                        <option value="Silver Membership">Silver Membership</option>
+                        <option value="Gold Membership">Gold Membership</option>
+                    </select>
+                    <input type="hidden" name="hiddendate" id="today">
+                    <input type="submit" value="Apply for Membership">
+                </form>
+            </section>
+            <section class="mslvl">
+                <h2>Membership Levels</h2>
+                <aside>
+                    <h3>Non Profit Membership Level</h3>
+                    <button id="ml1Btn">Learn More</button>
+                </aside>
+                <aside>
+                    <h3>Bronze Membership Level</h3>
+                    <button id="ml2Btn">Learn More</button>
+                </aside>
+                <aside>
+                    <h3>Silver Membership Level</h3>
+                    <button id="ml3Btn">Learn More</button>
+                </aside>
+                <aside>
+                    <h3>Gold Membership Level</h3>
+                    <button id="ml4Btn">Learn More</button>
+                </aside>
+                    <dialog id="mlModal">
+                        <div>
+                        <h4 id="mltitle"></h4>
+                        <button id="closeModal">X</button>
+                        </div>
+                        <span id="mldetails"></span>
+                    </dialog>
+            </section>
         </div>
-        <h1>Home</h1>
-        <section class="ew">
-            <div class="events">
-                <h2>Upcoming Events</h2>
-                <p>Monday 6:00 PM: Business Networking Mixer at the Provo City Library</p>
-                <p>Tuesday 10:00 AM: Utah Small Business Growth Workshop – Chamber Office</p>
-                <p>Wednesday 5:00 PM: Community Clean-Up & Volunteer Recognition – City Park</p>
-            </div>
-            <div class="weather">
-                <h2 id="city">Weather</h2>
-                <div>
-                    <img id="weather-icon" src="images/fake.png" alt="weather-icon" width="50" height="50">
-                    <span id="report"></span>
-                </div>
-            </div>
-            <div>
-                <h2>Forecast</h2>
-                <span id="forecast"></span>
-            </div>
-        </section> 
-        <section id="spot"></section>
     </main>
     <footer>
         <section class="address">
