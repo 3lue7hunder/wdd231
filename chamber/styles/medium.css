@@ -1,0 +1,42 @@
+@media only screen and (max-width: 40rem) { /* 640px */
+    #allplaces {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    #allplaces div {
+        display: grid;
+        grid-template-areas:
+            "name"
+            "photograph"
+            "description"
+            "location"
+            "button";
+        text-align: center;
+    }
+
+    #allplaces div h2 {
+        grid-area: name;
+    }
+
+    #allplaces div img {
+        grid-area: photograph;
+        width: 100%;
+        max-width: 300px;
+        margin: auto;
+    }
+
+    #allplaces div p {
+        grid-area: description;
+    }
+
+    #allplaces div .location {
+        grid-area: location;
+    }
+
+    #allplaces div button {
+        grid-area: button;
+        margin-top: 10px;
+    }
+}

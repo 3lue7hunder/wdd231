@@ -26,13 +26,13 @@
         column-gap: 10px;
     }
 
-    /*************** JOIN page ***************/
+    /*************** Join ***************/
     .sbs {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
-    /*************** HOME PAGE SPOTLIGHTS HERE ***************/
+    /*************** Spotlights ***************/
     #spot {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -49,12 +49,54 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    /*************** DISCOVER PAGE HERE ***************/
+    /*************** Discover ***************/
 
-    #allplaces {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-       }
+    @media only screen and (min-width: 64.1rem) { /* 1025px+ */
+        #allplaces {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+    
+        #allplaces div {
+            display: grid;
+            grid-template-areas: 
+                "name name"
+                "photograph description"
+                "photograph location"
+                "button button";
+            grid-template-columns: auto 1fr;
+            align-items: center;
+            padding: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+    
+        #allplaces div h2 {
+            grid-area: name;
+            text-align: center;
+        }
+    
+        #allplaces div img {
+            grid-area: photograph;
+            width: 350px;
+        }
+    
+        #allplaces div p {
+            grid-area: description;
+        }
+    
+        #allplaces div .location {
+            grid-area: location;
+            font-weight: bold;
+        }
+    
+        #allplaces div button {
+            grid-area: button;
+            justify-self: center;
+        }
+    }    
 
 
 }

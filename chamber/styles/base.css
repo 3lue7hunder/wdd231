@@ -386,6 +386,118 @@ form.designOne {
     color: var(--dark-charcoal);
   }
 
+
+  /*************** Discover  ***************/
+
+#allplaces div {
+    margin: 1rem 8px;
+    padding: 10px;
+    border: 1px solid #999;
+    background-color: #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    display: grid;
+    gap:10px;
+    grid-template-areas: 
+    "name" 
+    "photograph"
+    "description"
+    "cost"
+    "location"
+    "button"
+  }
+  #allplaces div h2 {
+    margin: 1rem 0px;
+    grid-area: name;
+    font-size: 2rem;
+  }
+
+  #allplaces div img {
+    width: 500px;
+    grid-area: photograph;
+  }
+
+  #allplaces div p {
+    margin: 1rem 0px;
+    grid-area: description;
+  }
+
+  #allplaces div address {
+    margin: 1rem 0px;
+    grid-area: location;
+  }
+
+  #allplaces div button {
+    margin: 1rem 0px;
+    background-color: var(--chestnut);
+    color: #eee;
+    border:none;
+    border-radius: 30px;
+    padding: 1rem;
+    grid-area: button;
+  }
+
+  @media only screen and (max-width: 40rem) { /* 640px */
+    #allplaces {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    #allplaces div {
+        display: grid;
+        grid-template-areas:
+            "name"
+            "photograph"
+            "description"
+            "location"
+            "button";
+        text-align: center;
+    }
+
+    #allplaces div h2 {
+        grid-area: name;
+    }
+
+    #allplaces div img {
+        grid-area: photograph;
+        width: 100%;
+        max-width: 300px;
+        margin: auto;
+    }
+
+    #allplaces div p {
+        grid-area: description;
+    }
+
+    #allplaces div .location {
+        grid-area: location;
+    }
+
+    #allplaces div button {
+        grid-area: button;
+        margin-top: 10px;
+    }
+}
+
+#allplaces div img {
+    max-width: 100%;
+}
+
+/* Medium and Large Screens: Apply hover effect */
+@media only screen and (min-width: 40rem) {
+    #allplaces div img {
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    }
+
+    #allplaces div img:hover {
+        transform: scale(1.1);
+        opacity: 0.8;
+        filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+    }
+}
+
+
 /*************** Footer ***************/
 
 footer {

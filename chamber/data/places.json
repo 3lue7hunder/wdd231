@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Zion National Park",
+        "description": "Explore stunning red rock canyons, hike famous trails like Angel’s Landing, and enjoy breathtaking scenery.",
+        "address": "Springdale, Utah, USA",
+        "cost": "$35 per vehicle (7-day pass)",
+        "photo_link": "zion.webp"
+    },
+    {
+        "name": "Arches National Park",
+        "description": "Marvel at over 2,000 natural stone arches, including Delicate Arch and Landscape Arch.",
+        "address": "Moab, Utah, USA",
+        "cost": "$30 per vehicle (7-day pass)",
+        "photo_link": "arches.webp"
+    },
+    {
+        "name": "Bryce Canyon National Park",
+        "description": "Walk among hoodoos—tall, thin rock spires—and experience one of the most unique landscapes in the world.",
+        "address": "Bryce, Utah, USA",
+        "cost": "$35 per vehicle (7-day pass)",
+        "photo_link": "bryce-canyon.webp"
+    },
+    {
+        "name": "Salt Lake City & Temple Square",
+        "description": "Visit the heart of Utah’s capital, featuring the Salt Lake Temple, gardens, and historical buildings.",
+        "address": "Salt Lake City, Utah, USA",
+        "cost": "Free",
+        "photo_link": "temple-square.webp"
+    },
+    {
+        "name": "Park City & Deer Valley",
+        "description": "Ski world-class slopes, explore charming downtown Park City, or enjoy summer outdoor activities.",
+        "address": "Park City, Utah, USA",
+        "cost": "Varies (Ski passes start at $100+ per day)",
+        "photo_link": "park-city.webp"
+    },
+    {
+        "name": "Monument Valley",
+        "description": "See the iconic red sandstone formations featured in countless films and enjoy Navajo-guided tours.",
+        "address": "Monument Valley, Utah/Arizona Border, USA",
+        "cost": "$8 per person entry fee",
+        "photo_link": "monument-valley.webp"
+    },
+    {
+        "name": "Great Salt Lake",
+        "description": "Experience the largest saltwater lake in the Western Hemisphere, with unique floating and bird-watching opportunities.",
+        "address": "Utah, USA",
+        "cost": "Free to $5 (state park entry)",
+        "photo_link": "great-salt-lake.webp"
+    },
+    {
+        "name": "Capitol Reef National Park",
+        "description": "Explore a hidden gem filled with cliffs, canyons, and historic orchards.",
+        "address": "Torrey, Utah, USA",
+        "cost": "$20 per vehicle (7-day pass)",
+        "photo_link": "capitol-reef.webp"
+    }
+]
