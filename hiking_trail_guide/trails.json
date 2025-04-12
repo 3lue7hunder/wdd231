@@ -1,0 +1,302 @@
+[
+    {
+        "id": 1,
+        "name": "Angels Landing",
+        "difficulty": "hard",
+        "length": 5.4,
+        "elevation_gain": 1500,
+        "image": "images/angels_landing.jpg",
+        "description": "A thrilling ridge hike in Zion with steep drop offs and stunning canyon views.",
+        "location": {
+            "city": "Springdale",
+            "lat": 37.2594,
+            "lon": -112.9508
+        },
+        "safety_tips": [
+            "Start early to avoid crowds and heat.",
+            "Bring plenty of water, there are no refill stations.",
+            "Wear grippy hiking shoes due to narrow paths and drop offs.",
+            "Do not attempt in bad weather, high risk of falls."
+        ]
+    },
+    {
+        "id": 2,
+        "name": "The Narrows",
+        "difficulty": "moderate",
+        "length": 9.4,
+        "elevation_gain": 334,
+        "image": "images/the_narrows.jpg",
+        "description": "A unique river hike through narrow sandstone canyons in Zion National Park.",
+        "location": {
+          "city": "Springdale",
+          "lat": 37.2969,
+          "lon": -112.9478
+        },
+        "safety_tips": [
+          "Check for flash flood warnings before entering.",
+          "Wear water shoes and neoprene socks.",
+          "Use a walking stick for balance.",
+          "Waterproof your gear."
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Delicate Arch",
+        "difficulty": "moderate",
+        "length": 3.0,
+        "elevation_gain": 480,
+        "image": "images/delicate_arch.jpg",
+        "description": "An iconic hike to Utah's most famous natural arch in Arches National Park.",
+        "location": {
+          "city": "Moab",
+          "lat": 38.7436,
+          "lon": -109.4993
+        },
+        "safety_tips": [
+          "Bring sun protection—there is no shade.",
+          "Start early to avoid crowds.",
+          "Watch your footing near the arch.",
+          "Carry at least 1 liter of water per hour."
+        ]
+    },
+    {
+        "id": 4,
+        "name": "The Wave (Coyote Buttes North)",
+        "difficulty": "moderate",
+        "length": 6.2,
+        "elevation_gain": 400,
+        "image": "images/the_wave.jpg",
+        "description": "A surreal sandstone formation with wave like patterns (permit required).",
+        "location": {
+          "city": "Kanab",
+          "lat": 36.9955,
+          "lon": -112.0064
+        },
+        "safety_tips": [
+          "Permits are required—plan ahead.",
+          "Use a GPS or map, trail is not marked.",
+          "Bring extra water and a backup power bank.",
+          "Avoid summer midday heat."
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Bryce Canyon Rim Trail",
+        "difficulty": "easy",
+        "length": 5.5,
+        "elevation_gain": 500,
+        "image": "images/bryce_rim_trail.jpg",
+        "description": "A scenic trail with panoramic views of Bryce Canyon's unique hoodoo formations.",
+        "location": {
+          "city": "Bryce",
+          "lat": 37.6283,
+          "lon": -112.1677
+        },
+        "safety_tips": [
+          "Stay behind railings at viewpoints.",
+          "Be cautious during icy or snowy conditions.",
+          "Wear layers, weather changes quickly.",
+          "Bring snacks and water."
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Peek-a-Boo & Spooky Gulch",
+        "difficulty": "hard",
+        "length": 3.5,
+        "elevation_gain": 600,
+        "image": "images/peekaboo_spooky.jpg",
+        "description": "Adventurous slot canyon loop with tight squeezes and rock scrambling.",
+        "location": {
+          "city": "Escalante",
+          "lat": 37.4755,
+          "lon": -111.2225
+        },
+        "safety_tips": [
+          "Do not attempt during or after rain.",
+          "Bring gloves for scrambling.",
+          "Travel light, canyons are narrow.",
+          "Let someone know your route."
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Mount Timpanogos",
+        "difficulty": "hard",
+        "length": 15.0,
+        "elevation_gain": 4400,
+        "image": "images/mount_timpanogos.jpg",
+        "description": "A strenuous summit hike offering wildflowers, waterfalls, and 360° views.",
+        "location": {
+          "city": "Provo",
+          "lat": 40.4047,
+          "lon": -111.6496
+        },
+        "safety_tips": [
+          "Bring layers, summit can be cold even in summer.",
+          "Start before sunrise to avoid storms.",
+          "Watch for wildlife, including mountain goats.",
+          "Carry extra food and water."
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Observation Point",
+        "difficulty": "hard",
+        "length": 8.0,
+        "elevation_gain": 2100,
+        "image": "images/observation_point.jpg",
+        "description": "An incredible overlook in Zion, higher than Angels Landing with fewer crowds.",
+        "location": {
+          "city": "Springdale",
+          "lat": 37.2704,
+          "lon": -112.9336
+        },
+        "safety_tips": [
+          "Watch for loose gravel on switchbacks.",
+          "Avoid midday heat, trail is exposed.",
+          "Use hiking poles for downhill support.",
+          "Take frequent breaks to hydrate."
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Corona Arch",
+        "difficulty": "moderate",
+        "length": 3.0,
+        "elevation_gain": 450,
+        "image": "images/corona_arch.jpg",
+        "description": "A short but scenic trail near Moab to a massive natural arch.",
+        "location": {
+          "city": "Moab",
+          "lat": 38.5755,
+          "lon": -109.6228
+        },
+        "safety_tips": [
+          "Watch for slippery slickrock sections.",
+          "Follow cairns to stay on trail.",
+          "Use caution on the ladder section.",
+          "Bring plenty of water."
+        ]
+    },
+    {
+        "id": 10,
+        "name": "Devils Garden Trail",
+        "difficulty": "hard",
+        "length": 7.9,
+        "elevation_gain": 1000,
+        "image": "images/devils_garden.jpg",
+        "description": "A loop through Arches with several spectacular arches and sandstone fins.",
+        "location": {
+          "city": "Moab",
+          "lat": 38.7885,
+          "lon": -109.5949
+        },
+        "safety_tips": [
+          "Trail can be confusing—watch for markers.",
+          "Wear good shoes for rocky terrain.",
+          "Bring navigation and extra water.",
+          "Start early to beat the heat."
+        ]
+    },
+    {
+        "id": 11,
+        "name": "Kanarra Falls",
+        "difficulty": "moderate",
+        "length": 4.8,
+        "elevation_gain": 700,
+        "image": "images/kanarra_falls.jpg",
+        "description": "A beautiful slot canyon hike with ladders and flowing waterfalls (permit required).",
+        "location": {
+          "city": "Kanarraville",
+          "lat": 37.5441,
+          "lon": -113.1813
+        },
+        "safety_tips": [
+          "Permits are required—buy ahead of time.",
+          "Use caution on wet ladders and rocks.",
+          "Protect electronics from water.",
+          "Don’t attempt if flash flood risk is high."
+        ]
+    },
+    {
+        "id": 12,
+        "name": "Calf Creek Falls",
+        "difficulty": "moderate",
+        "length": 6.0,
+        "elevation_gain": 520,
+        "image": "images/calf_creek_falls.jpg",
+        "description": "A pleasant desert trail leading to a stunning 126 foot waterfall.",
+        "location": {
+          "city": "Escalante",
+          "lat": 37.7896,
+          "lon": -111.4137
+        },
+        "safety_tips": [
+          "Bring a hat and sunscreen, there is no shade.",
+          "Swimming is allowed, bring a towel.",
+          "Watch for rattlesnakes.",
+          "Drink plenty of water."
+        ]
+    },
+    {
+        "id": 13,
+        "name": "Capitol Gorge Trail",
+        "difficulty": "easy",
+        "length": 2.0,
+        "elevation_gain": 200,
+        "image": "images/capitol_gorge.jpg",
+        "description": "A short hike through a scenic canyon with petroglyphs and historic inscriptions.",
+        "location": {
+          "city": "Torrey",
+          "lat": 38.2824,
+          "lon": -111.2282
+        },
+        "safety_tips": [
+          "Don’t climb on rock formations.",
+          "Stay on marked paths to preserve history.",
+          "Be prepared for hot temperatures.",
+          "Check the weather for storm risk."
+        ]
+    },
+    {
+        "id": 14,
+        "name": "Red Cliffs Desert Reserve",
+        "difficulty": "easy",
+        "length": 3.0,
+        "elevation_gain": 300,
+        "image": "images/red_cliffs.jpg",
+        "description": "A collection of scenic trails through lava rock and red desert landscapes.",
+        "location": {
+          "city": "St. George",
+          "lat": 37.2046,
+          "lon": -113.6256
+        },
+        "safety_tips": [
+          "Watch for snakes and lizards on the trail.",
+          "Don’t touch cryptobiotic soil.",
+          "Wear sunscreen and a hat.",
+          "Stay hydrated, there are no water sources on trail."
+        ]
+    },
+    {
+        "id": 15,
+        "name": "Little Wild Horse Canyon",
+        "difficulty": "moderate",
+        "length": 8.0,
+        "elevation_gain": 800,
+        "image": "images/little_wild_horse.jpg",
+        "description": "A fun and family friendly loop through narrow sandstone slot canyons.",
+        "location": {
+          "city": "Goblin Valley",
+          "lat": 38.5722,
+          "lon": -110.7912
+        },
+        "safety_tips": [
+          "Avoid slot canyons during storm forecasts.",
+          "Bring a headlamp for dim sections.",
+          "Leave no trace, pack out all trash.",
+          "Let someone know your route and ETA."
+        ]
+    }
+]

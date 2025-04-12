@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="WDD 231 - Web Frontend Development 1 | Ty Rusnell | Review Page">
+        <meta name="author" content="Ty Rusnell">
+        <meta property="og:title" content="Utah Hiking Trails Guide">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://3lue7hunder.github.io/wdd231/hiking_trail_guide">
+        <meta property="og:image" content="https://3lue7hunder.github.io/wdd231/hiking_trail_guide/images/hiking_logo.png">
+        <title>Utah Hiking Trails Guide</title>
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/larger.css">
+        <script defer src="scripts/reviews.js"></script>
+        <script defer src="scripts/trails.js"></script>
+        <script defer src="scripts/getdata.js"></script>
+        <script defer src="scripts/navigation.js"></script>
+        <script defer src="scripts/featured.js"></script>
+        <link rel="icon" href="favicon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <img src="images/hiking_logo.png" alt="Trail" width="150" >
+        <div>
+          <span>Utah Hiking Trails</span>
+          
+        </div>
+        <button id="hamburger" aria-label="Open navigation menu"></button>
+    </header>
+
+
+    <nav id="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="trails.html">Trail Directory</a></li>
+        <li><a href="reviews.html">Trail Reviews</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+        <div class="review-layout">
+          <section id="review-form-section">
+            <h2>Submit Your Review</h2>
+            <form id="review-form">
+              <label for="trail-name">Trail Name</label>
+              <select id="trail-name" required>
+                <option value="">Select a trail</option>
+              </select>
+      
+              <label for="review-text">Your Review</label>
+              <textarea id="review-text" rows="4" required></textarea>
+      
+              <label for="review-rating">Rating (1-5)</label>
+              <select id="review-rating" required>
+                <option value="">Select a rating</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+      
+              <button type="submit">Submit Review</button>
+            </form>
+          </section>
+      
+          <section id="reviews-list">
+            <h2>User Reviews</h2>
+            <div id="reviews-container"></div>
+          </section>
+        </div>
+      </div>
+      
+
+    <footer>
+        <section class="social">
+          <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook" width="25" height="44" loading="lazy"></a>
+          <a href="https://x.com/"><img src="images/twitter.png" alt="twitter" width="54" height="44" loading="lazy"></a>
+          <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="instagram" width="44" height="44" loading="lazy"></a>
+        </section>
+        <section class="project">
+          <p>&copy; <span id="currentyear"></span> Ty Rusnell | Utah</p>
+          <p id="lastModified"></p>
+        </section>
+      </footer>
+</body>
+</html>
