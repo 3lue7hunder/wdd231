@@ -16,7 +16,7 @@ async function loadFeaturedTrail() {
       displayWeatherFallback("Weather data not available for this trail.");
     }
 
-    console.log("Safety Tips:", trail.safety_tips);  // Check the safety tips in the console
+    console.log("Safety Tips:", trail.safety_tips);  
     displaySafetyTips(trail.safety_tips || []);
   } catch (error) {
     console.error("Failed to load trail:", error);
@@ -41,13 +41,13 @@ function displayTrailInfo(trail) {
 }
 
 async function fetchWeather(lat, lon) {
-  const url = `${WEATHER_API_URL}?lat=${lat}&lon=${lon}&appid=${WEATHER_API_KEY}&units=imperial`;
+  const url = `${WEATHER_API_URL}?lat=${lat}&lon=${lon}&appid=${WEATHER_API_KEY}&units=imperial`; // Using external API integration
   try {
-    const res = await fetch(url);
+    const res = await fetch(url); // Using external API integration
     if (!res.ok) {
       throw new Error("Weather API response not OK");
     }
-    const data = await res.json();
+    const data = await res.json(); // Using external API integration
     if (data.weather && data.weather[0]) {
       displayWeather(data);
     } else {
@@ -63,7 +63,7 @@ async function fetchWeather(lat, lon) {
 function displayWeather(weather) {
   const container = document.getElementById('trail-weather');
 
-  // Get icon code from weather data
+
   const iconCode = weather.weather[0].icon;
   const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
 

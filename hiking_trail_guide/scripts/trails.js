@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     async function loadTrails() {
         try {
-            const response = await fetch("trails.json");
+            const response = await fetch("trails.json"); // Using local API Integration
             if (!response.ok) throw new Error("Failed to load trails.");
             const trails = await response.json();
             displayTrails(trails);
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    function showModal(trail) {
+    function showModal(trail) { // Modals for trail.html page
         document.getElementById("modal-title").textContent = trail.name;
         document.getElementById("modal-description").textContent = trail.description;
         document.getElementById("modal-difficulty").textContent = trail.difficulty;

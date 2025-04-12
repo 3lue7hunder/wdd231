@@ -3,38 +3,34 @@ document.addEventListener("DOMContentLoaded", () => {
     const trailSelect = document.getElementById("trail-name");
     const reviewsContainer = document.getElementById("reviews-container");
 
-    // Load trail data and populate the select dropdown
     async function loadTrails() {
         try {
             const response = await fetch("trails.json");
             if (!response.ok) throw new Error("Failed to load trails.");
             const trails = await response.json();
             populateTrailOptions(trails);
-            loadReviews(trails); // Load existing reviews
+            loadReviews(trails); 
         } catch (error) {
             console.error("Error fetching trails:", error);
         }
     }
 
-    // Populate the trail options in the dropdown
     function populateTrailOptions(trails) {
         trails.forEach(trail => {
             const option = document.createElement("option");
-            option.value = trail.id; // Assumes trail.id is a number
+            option.value = trail.id; 
             option.textContent = trail.name;
             trailSelect.appendChild(option);
         });
     }
 
-    // Load reviews from localStorage and display them
     function loadReviews(trails) {
         const reviews = JSON.parse(localStorage.getItem("reviews")) || [];
         reviewsContainer.innerHTML = "";
 
         reviews.forEach(review => {
-            // Convert stored string ID to number for comparison
             const trail = trails.find(t => t.id === Number(review.trailId));
-            if (!trail) return; // Skip if trail no longer exists
+            if (!trail) return; 
 
             const reviewElement = document.createElement("div");
             reviewElement.classList.add("review");
@@ -48,7 +44,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Handle the form submission
     reviewForm.addEventListener("submit", async (e) => {
         e.preventDefault();
 
@@ -62,17 +57,15 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         const newReview = {
-            trailId: Number(trailId), // Convert to number before storing
+            trailId: Number(trailId),
             text: reviewText,
             rating: reviewRating,
         };
 
-        // Save the review in localStorage
-        const reviews = JSON.parse(localStorage.getItem("reviews")) || [];
+        const reviews = JSON.parse(localStorage.getItem("reviews")) || []; // Loading data from local storage
         reviews.push(newReview);
-        localStorage.setItem("reviews", JSON.stringify(reviews));
+        localStorage.setItem("reviews", JSON.stringify(reviews)); // Saving data to local storage
 
-        // Reload reviews and clear the form
         const trails = await fetch("trails.json").then(res => res.json());
         loadReviews(trails);
         reviewForm.reset();
